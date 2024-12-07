@@ -105,7 +105,7 @@ class AI:
 
     # Return decision at the root
     def compute_decision(self):
-        self.build_tree(self.root, 0)
+        self.build_tree(self.root, self.search_depth)
         direction, _ = self.expectimax(self.root)
         return direction
 
